@@ -1,15 +1,15 @@
 module colored
 
 const (
-	ansi_reset  = '\u001B[0m'
-	ansi_black  = '\u001B[30m'
-	ansi_red    = '\u001B[31m'
-	ansi_green  = '\u001B[32m'
-	ansi_yellow = '\u001B[33m'
-	ansi_blue   = '\u001B[34m'
-	ansi_purple = '\u001B[35m'
-	ansi_cyan   = '\u001B[36m'
-	ansi_white  = '\u001B[37m'
+	ansi_reset  = '\e[0m'
+	ansi_black  = '\e[30m'
+	ansi_red    = '\e[31m'
+	ansi_green  = '\e[32m'
+	ansi_yellow = '\e[33m'
+	ansi_blue   = '\e[34m'
+	ansi_purple = '\e[35m'
+	ansi_cyan   = '\e[36m'
+	ansi_white  = '\e[37m'
 )
 
 pub fn reset() string {
@@ -49,14 +49,14 @@ pub fn white(str string) string {
 }
 
 const (
-	ansi_black_bg  = '\u001B[40m'
-	ansi_red_bg    = '\u001B[41m'
-	ansi_green_bg  = '\u001B[42m'
-	ansi_yellow_bg = '\u001B[43m'
-	ansi_blue_bg   = '\u001B[44m'
-	ansi_purple_bg = '\u001B[45m'
-	ansi_cyan_bg   = '\u001B[46m'
-	ansi_white_bg  = '\u001B[47m'
+	ansi_black_bg  = '\e[40m'
+	ansi_red_bg    = '\e[41m'
+	ansi_green_bg  = '\e[42m'
+	ansi_yellow_bg = '\e[43m'
+	ansi_blue_bg   = '\e[44m'
+	ansi_purple_bg = '\e[45m'
+	ansi_cyan_bg   = '\e[46m'
+	ansi_white_bg  = '\e[47m'
 )
 
 pub fn bg_black(str string) string {
