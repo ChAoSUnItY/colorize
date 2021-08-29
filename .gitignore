@@ -6,3 +6,4 @@ colored
 *.so
 *.dylib
 *.dll
+.vscode
