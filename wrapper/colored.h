@@ -3,12 +3,24 @@
 
 #include <stdio.h>
 
+#define u16 unsigned short
+
 #ifdef _WIN32
 #include <windows.h>
 #endif
 
-char *reset();
+HANDLE getHandle();
 
-char *red();
+u16 getDefault();
+
+u16 getCurrentAttributes(HANDLE h);
+
+void reset(u16 attribute);
+
+void underline(u16 attr);
+
+void black(u16 attr);
+
+void red(u16 attr);
 
 #endif
