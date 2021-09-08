@@ -92,8 +92,8 @@ void red(u16 attr)
 void green(u16 attr)
 {
     attr &= ~FOREGROUND_RED;
-    attr &= ~FOREGROUND_GREEN;
-    attr |= FOREGROUND_BLUE;
+    attr |= FOREGROUND_GREEN;
+    attr &= ~FOREGROUND_BLUE;
     attr &= ~FOREGROUND_INTENSITY;
 
     set(attr);
@@ -250,8 +250,8 @@ void bg_red(u16 attr)
 void bg_green(u16 attr)
 {
     attr &= ~BACKGROUND_RED;
-    attr &= ~BACKGROUND_GREEN;
-    attr |= BACKGROUND_BLUE;
+    attr |= BACKGROUND_GREEN;
+    attr &= ~BACKGROUND_BLUE;
     attr &= ~BACKGROUND_INTENSITY;
 
     set(attr);
