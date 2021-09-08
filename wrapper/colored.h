@@ -25,6 +25,8 @@ void no_underline(u16 attr);
 
 void regular(u16 attr);
 
+void def(u16 attr);
+
 void black(u16 attr);
 
 void red(u16 attr);

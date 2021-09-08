@@ -60,6 +60,16 @@ void regular(u16 attr)
     set(attr & ~COMMON_LVB_REVERSE_VIDEO);
 }
 
+void def(u16 attr)
+{
+    attr &= ~FOREGROUND_RED;
+    attr &= ~FOREGROUND_GREEN;
+    attr &= ~FOREGROUND_BLUE;
+    attr &= ~FOREGROUND_INTENSITY;
+
+    set(attr);
+}
+
 void black(u16 attr)
 {
     attr &= ~FOREGROUND_RED;

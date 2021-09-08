@@ -20,6 +20,8 @@ pub fn C.no_underline(u16)
 
 pub fn C.regular(u16)
 
+pub fn C.def(u16)
+
 pub fn C.black(u16)
 
 pub fn C.red(u16)
