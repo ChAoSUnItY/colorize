@@ -1,13 +1,13 @@
-# colored
+# colorize
 colorize your console with V!
 ------
 ## Usage
 ```v
-import colored
+import colorize
 
 fn main() {
-    colored.red()
+    colorize.red()
     println("Hello World!")
-    colored.reset()
+    colorize.reset()
 }
 ```
