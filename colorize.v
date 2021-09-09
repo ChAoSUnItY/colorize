@@ -1,4 +1,4 @@
-module colored
+module colorize
 
 import wrapper
 
